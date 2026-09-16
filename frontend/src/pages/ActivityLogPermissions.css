@@ -1,0 +1,400 @@
+.activity-permission-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f8fafc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.activity-permission-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.activity-permission-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.activity-permission-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.activity-permission-title h1 {
+    margin: 0;
+    font-size: 27px;
+    color: #0f172a;
+}
+
+.activity-permission-title p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.permission-refresh-button {
+    border: none;
+    border-radius: 9px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.permission-refresh-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   ALERTS
+========================================== */
+
+.permission-alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.permission-alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.permission-alert.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* ==========================================
+   SUMMARY
+========================================== */
+
+.permission-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.permission-summary-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.permission-summary-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.permission-summary-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.permission-summary-card strong {
+    color: #0f172a;
+    font-size: 22px;
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.permission-search-wrapper {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0 14px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 18px;
+    color: #64748b;
+}
+
+.permission-search-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #0f172a;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.permission-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.permission-card-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.permission-card-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.permission-card-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.permission-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.permission-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.permission-table th {
+    padding: 13px 18px;
+    text-align: left;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.permission-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 13px;
+}
+
+.permission-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* ==========================================
+   USER
+========================================== */
+
+.permission-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.permission-user-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+    background: #f1f5f9;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.permission-user strong {
+    display: block;
+    color: #0f172a;
+}
+
+.permission-user span {
+    display: block;
+    margin-top: 3px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* ==========================================
+   ROLE
+========================================== */
+
+.permission-role {
+    display: inline-flex;
+    padding: 5px 9px;
+    border-radius: 7px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   ACCESS BADGES
+========================================== */
+
+.access-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.access-badge.authorized {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.access-badge.denied {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ==========================================
+   ACTION BUTTON
+========================================== */
+
+.permission-action {
+    border: none;
+    border-radius: 7px;
+    padding: 7px 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.permission-action.authorize {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.permission-action.revoke {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.permission-action:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   LOADING / EMPTY
+========================================== */
+
+.permission-loading,
+.permission-empty {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+}
+
+.permission-loading p,
+.permission-empty p {
+    margin: 10px 0 0;
+}
+
+.permission-empty h3 {
+    margin: 12px 0 0;
+    color: #334155;
+}
+
+/* ==========================================
+   SPINNER
+========================================== */
+
+.permission-spin {
+    animation: permissionSpin 1s linear infinite;
+}
+
+@keyframes permissionSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+    .permission-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-permission-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .activity-permission-page {
+        padding: 15px;
+    }
+
+    .activity-permission-title h1 {
+        font-size: 23px;
+    }
+
+    .permission-refresh-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

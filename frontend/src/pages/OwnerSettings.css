@@ -1,0 +1,623 @@
+/* =====================================================
+   OWNER SETTINGS PAGE
+===================================================== */
+
+.owner-settings-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.owner-settings-main {
+    margin-left: 250px;
+
+    width: calc(100% - 250px);
+    min-height: 100vh;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.owner-settings-header {
+    height: 72px;
+
+    width: 100%;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+}
+
+.owner-settings-search {
+    display: flex;
+    align-items: center;
+}
+
+.owner-settings-search input {
+    width: 280px;
+    height: 42px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff !important;
+    color: #1e293b !important;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+.owner-settings-search input::placeholder {
+    color: #94a3b8;
+}
+
+.owner-settings-search input:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =====================================================
+   HEADER RIGHT
+===================================================== */
+
+.owner-settings-header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.owner-settings-icon-btn {
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #64748b;
+
+    cursor: pointer;
+}
+
+.owner-settings-icon-btn:hover {
+    background: #f8fafc;
+    color: #2563eb;
+}
+
+.notification-dot {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #ef4444;
+}
+
+
+/* =====================================================
+   USER PROFILE
+===================================================== */
+
+.owner-settings-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-left: 10px;
+}
+
+.owner-settings-avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+}
+
+.owner-settings-user-info strong {
+    display: block;
+
+    font-size: 14px;
+    color: #0f172a;
+}
+
+.owner-settings-user-info span {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 11px;
+    color: #64748b;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.owner-settings-title {
+    padding: 34px 32px 22px;
+
+    box-sizing: border-box;
+}
+
+.owner-settings-title h1 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+.owner-settings-title p {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SUCCESS / ERROR MESSAGE
+===================================================== */
+
+.owner-settings-message {
+    margin: 0 32px 20px;
+
+    padding: 13px 16px;
+
+    border-radius: 8px;
+
+    background: #ecfdf5;
+    color: #047857;
+
+    border: 1px solid #a7f3d0;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SETTINGS CARD
+===================================================== */
+
+.owner-settings-card {
+    margin: 0 32px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    padding: 26px 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.owner-settings-card-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-bottom: 24px;
+}
+
+.settings-section-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner-settings-card-header h2 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+.owner-settings-card-header p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+.settings-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    border: none;
+    background: transparent;
+
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    margin-top: 14px;
+}
+
+.settings-back-btn:hover {
+    color: #1d4ed8;
+}
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.settings-form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px 26px;
+
+    width: 100%;
+}
+
+.settings-field {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.settings-field label {
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.settings-field input {
+    width: 100%;
+    height: 44px;
+
+    box-sizing: border-box;
+
+    padding: 11px 13px;
+
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+
+    color: #1e293b !important;
+
+    font-size: 14px;
+
+    opacity: 1 !important;
+
+    -webkit-text-fill-color: #1e293b !important;
+}
+
+.settings-field input::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+}
+
+.settings-field input:hover {
+    border-color: #94a3b8 !important;
+}
+
+.settings-field input:focus {
+    border-color: #2563eb !important;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =====================================================
+   DISABLED INPUT
+===================================================== */
+
+.settings-field input:disabled {
+    background: #f8fafc !important;
+    color: #64748b !important;
+
+    cursor: not-allowed;
+
+    opacity: 1 !important;
+    -webkit-text-fill-color: #64748b !important;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.settings-form-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 22px;
+}
+
+.settings-save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 10px 18px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.settings-save-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.settings-save-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =====================================================
+   PASSWORD INPUT
+===================================================== */
+
+.password-input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    width: 100%;
+
+    padding-right: 44px;
+}
+
+.password-input-wrapper button {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 28px;
+    height: 28px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+}
+
+.password-input-wrapper button:hover {
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   NOTIFICATIONS
+===================================================== */
+
+.settings-options {
+    border-top: 1px solid #e2e8f0;
+}
+
+.settings-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 17px 4px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    cursor: pointer;
+}
+
+.settings-option-text {
+    min-width: 0;
+}
+
+.settings-option-text strong {
+    display: block;
+
+    font-size: 14px;
+
+    color: #334155;
+}
+
+.settings-option-text span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.settings-option input {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    accent-color: #2563eb;
+}
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .settings-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .owner-settings-card {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .owner-settings-title {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .owner-settings-message {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .owner-settings-header {
+        padding: 0 16px;
+    }
+
+    .owner-settings-search {
+        display: none;
+    }
+
+    .owner-settings-title {
+        padding: 24px 16px 18px;
+    }
+
+    .owner-settings-title h1 {
+        font-size: 24px;
+    }
+
+    .owner-settings-message {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .owner-settings-card {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 20px;
+    }
+
+    .settings-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .owner-settings-user-info {
+        display: none;
+    }
+
+    .settings-form-actions {
+        justify-content: stretch;
+    }
+
+    .settings-save-btn {
+        width: 100%;
+    }
+}

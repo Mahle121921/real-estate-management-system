@@ -1,0 +1,655 @@
+/* =====================================================
+   NOTIFICATIONS PAGE
+===================================================== */
+
+.notifications-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f8fafc;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.notifications-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.notifications-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+.notifications-header p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.notifications-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.refresh-button,
+.send-notification-button,
+.retry-button,
+.send-button,
+.cancel-button {
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.refresh-button {
+    padding: 10px 16px;
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    color: #334155;
+}
+
+.refresh-button:hover {
+    background: #f1f5f9;
+}
+
+.send-notification-button {
+    padding: 10px 17px;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.send-notification-button:hover {
+    background: #1d4ed8;
+}
+
+/* =====================================================
+   ALERTS
+===================================================== */
+
+.notification-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.notification-alert span {
+    flex: 1;
+}
+
+.notification-alert button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.success-alert {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.success-alert button {
+    color: #047857;
+}
+
+.error-alert {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.error-alert button {
+    color: #b91c1c;
+}
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.notification-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.notification-stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.notification-stat-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-stat-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.notification-stat-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 24px;
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.notification-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.notification-search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    padding: 0 12px;
+    width: min(420px, 100%);
+}
+
+.notification-search svg {
+    color: #94a3b8;
+}
+
+.notification-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 11px 0;
+    font-size: 14px;
+    background: transparent;
+}
+
+.notification-toolbar select {
+    padding: 11px 14px;
+    min-width: 150px;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    outline: none;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.notifications-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.notifications-card-header {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.notifications-card-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.notifications-card-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.notifications-card-header > svg {
+    color: #2563eb;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.notification-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.notification-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.notification-table th {
+    text-align: left;
+    padding: 13px 16px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.notification-table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #eef2f7;
+    color: #334155;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.notification-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =====================================================
+   RECIPIENT
+===================================================== */
+
+.recipient-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 180px;
+}
+
+.recipient-cell strong {
+    color: #0f172a;
+}
+
+.recipient-cell span {
+    color: #475569;
+    font-size: 12px;
+}
+
+.recipient-cell small {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+/* =====================================================
+   TYPE
+===================================================== */
+
+.notification-type {
+    display: inline-flex;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message-cell {
+    max-width: 330px;
+    line-height: 1.5;
+    color: #475569;
+}
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.date-cell {
+    white-space: nowrap;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.notification-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.notification-status.sent {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.notification-status.pending {
+    background: #fffbeb;
+    color: #b45309;
+}
+
+.notification-status.failed {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+/* =====================================================
+   RETRY
+===================================================== */
+
+.retry-button {
+    padding: 7px 10px;
+    background: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
+    font-size: 12px;
+}
+
+.retry-button:hover {
+    background: #ffedd5;
+}
+
+.retry-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =====================================================
+   EMPTY / LOADING
+===================================================== */
+
+.notification-loading,
+.notification-empty {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px;
+}
+
+.notification-empty h3 {
+    margin: 15px 0 5px;
+    color: #334155;
+}
+
+.notification-empty p,
+.notification-loading p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.notification-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.notification-modal {
+    width: min(600px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+}
+
+.notification-modal-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px 22px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.notification-modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.notification-modal-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.modal-close-button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: #f1f5f9;
+    color: #475569;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close-button:hover {
+    background: #e2e8f0;
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.notification-modal form {
+    padding: 22px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon svg {
+    position: absolute;
+    left: 12px;
+    color: #94a3b8;
+    pointer-events: none;
+}
+
+.input-with-icon input,
+.input-with-icon select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #334155;
+    background: #ffffff;
+}
+
+.input-with-icon input,
+.input-with-icon select {
+    height: 44px;
+    padding: 0 12px 0 40px;
+}
+
+.form-group textarea {
+    padding: 12px;
+    resize: vertical;
+    min-height: 140px;
+    font-family: inherit;
+}
+
+.input-with-icon input:focus,
+.input-with-icon select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =====================================================
+   MODAL ACTIONS
+===================================================== */
+
+.notification-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.cancel-button {
+    padding: 10px 18px;
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.cancel-button:hover {
+    background: #e2e8f0;
+}
+
+.send-button {
+    padding: 10px 18px;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.send-button:hover {
+    background: #1d4ed8;
+}
+
+.send-button:disabled,
+.refresh-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* =====================================================
+   SPINNER
+===================================================== */
+
+.spin {
+    animation: notification-spin 1s linear infinite;
+}
+
+@keyframes notification-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .notification-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .notifications-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .notifications-header-actions {
+        width: 100%;
+    }
+
+    .refresh-button,
+    .send-notification-button {
+        flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .notifications-page {
+        padding: 15px;
+    }
+
+    .notification-stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .notification-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .notification-search {
+        width: 100%;
+    }
+
+    .notification-toolbar select {
+        width: 100%;
+    }
+
+    .notifications-header-actions {
+        flex-direction: column;
+    }
+}

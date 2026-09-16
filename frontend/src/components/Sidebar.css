@@ -1,0 +1,98 @@
+/* =====================================================
+   GLOBAL SIDEBAR
+===================================================== */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e2e8f0;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SIDEBAR HEADER
+===================================================== */
+
+.sidebar-header {
+    min-height: 88px;
+
+    padding: 18px 18px 16px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    box-sizing: border-box;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+
+    color: #0f172a;
+}
+
+.sidebar-header p {
+    margin: 5px 0 0;
+
+    font-size: 9px;
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    color: #64748b;
+}
+.sidebar-nav {
+    flex: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 12px 10px;
+
+    min-height: 0;
+}
+
+.sidebar-footer {
+    flex-shrink: 0;
+
+    padding: 10px;
+
+    background: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+.sidebar-nav::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

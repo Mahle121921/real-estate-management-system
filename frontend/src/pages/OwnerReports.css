@@ -1,0 +1,789 @@
+.or-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.or-sidebar {
+    width: 250px;
+    min-width: 250px;
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.or-logo {
+    padding: 22px 18px;
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.or-logo h2 {
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.or-logo p {
+    margin: 5px 0 0;
+    font-size: 8px;
+    line-height: 1.4;
+    color: #94a3b8;
+}
+
+.or-nav {
+    flex: 1;
+    padding: 14px 10px;
+    overflow-y: auto;
+}
+
+.or-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 11px 13px;
+    border-radius: 7px;
+    margin-bottom: 3px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.or-menu-item:hover {
+    background: #1e293b;
+    color: #fff;
+}
+
+.or-menu-item.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.or-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or-logout {
+    margin: 0 10px 10px;
+    border: 0;
+    background: transparent;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+}
+
+.or-logout:hover {
+    background: #1e293b;
+    color: #fff;
+}
+
+.or-user-footer {
+    padding: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or-avatar-sm {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.or-user-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.or-user-role {
+    font-size: 10px;
+    color: #94a3b8;
+}
+
+/* ======================================================
+   MAIN
+====================================================== */
+
+.or-main {
+    margin-left: 250px;
+    flex: 1;
+    min-width: 0;
+}
+
+.or-header {
+    height: 76px;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+.or-welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.or-welcome-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.or-welcome-subtitle {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.or-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.or-search {
+    width: 250px;
+    height: 36px;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 11px;
+    color: #94a3b8;
+}
+
+.or-search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.or-icon-btn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.or-notification {
+    position: relative;
+}
+
+.or-notification span {
+    position: absolute;
+    right: -4px;
+    top: -5px;
+    background: #ef4444;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or-user-chip {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-left: 7px;
+}
+
+.or-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.or-chip-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.or-chip-role {
+    font-size: 10px;
+    color: #64748b;
+}
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.or-content {
+    padding: 26px 30px 40px;
+}
+
+.or-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.or-page-heading h1 {
+    margin: 0 0 5px;
+    font-size: 25px;
+    color: #0f172a;
+}
+
+.or-page-heading p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.or-print-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.or-print-btn:hover {
+    background: #1d4ed8;
+}
+
+.or-error {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+/* ======================================================
+   SUMMARY
+====================================================== */
+
+.or-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.or-summary-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.or-summary-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or-summary-icon.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.or-summary-icon.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.or-summary-icon.purple {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.or-summary-icon.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.or-summary-card span {
+    display: block;
+    color: #64748b;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.or-summary-card strong {
+    color: #0f172a;
+    font-size: 17px;
+}
+
+/* ======================================================
+   TABS
+====================================================== */
+
+.or-report-tabs {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 6px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+}
+
+.or-report-tabs button {
+    border: 0;
+    background: transparent;
+    color: #64748b;
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.or-report-tabs button:hover {
+    background: #f1f5f9;
+    color: #334155;
+}
+
+.or-report-tabs button.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* ======================================================
+   SECTION TITLE
+====================================================== */
+
+.or-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.or-section-title h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 17px;
+}
+
+.or-section-title p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.or-section-title > span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* ======================================================
+   PROPERTY STATUS
+====================================================== */
+
+.or-property-status-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.or-status-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 20px;
+    border-left: 4px solid;
+}
+
+.or-status-card span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.or-status-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+.or-status-card.available {
+    border-left-color: #22c55e;
+}
+
+.or-status-card.reserved {
+    border-left-color: #f59e0b;
+}
+
+.or-status-card.rented {
+    border-left-color: #3b82f6;
+}
+
+.or-status-card.sold {
+    border-left-color: #8b5cf6;
+}
+
+/* ======================================================
+   FINANCIAL OVERVIEW
+====================================================== */
+
+.or-financial-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.or-financial-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.or-financial-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.or-financial-card span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.or-financial-card strong {
+    display: block;
+    margin-top: 7px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+.or-financial-card > p {
+    margin: 12px 0 0;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.or-financial-card.revenue svg {
+    color: #16a34a;
+}
+
+.or-financial-card.expense svg {
+    color: #ea580c;
+}
+
+.or-financial-card.profit svg {
+    color: #2563eb;
+}
+
+/* ======================================================
+   TABLE
+====================================================== */
+
+.or-report-section {
+    margin-top: 4px;
+}
+
+.or-table-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.or-table-wrapper {
+    overflow-x: auto;
+}
+
+.or-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.or-table-wrapper th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: left;
+    padding: 13px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.or-table-wrapper td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+    font-size: 12px;
+}
+
+.or-table-wrapper tbody tr:hover {
+    background: #f8fafc;
+}
+
+.or-table-wrapper td strong {
+    display: block;
+    color: #0f172a;
+    font-size: 12px;
+}
+
+.or-table-wrapper td small {
+    display: block;
+    margin-top: 3px;
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.money {
+    color: #16a34a !important;
+    font-weight: 700;
+}
+
+.expense-money {
+    color: #dc2626 !important;
+    font-weight: 700;
+}
+
+.or-status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.or-status-badge.paid {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.or-status-badge.pending {
+    background: #fef3c7;
+    color: #a16207;
+}
+
+.or-empty {
+    text-align: center !important;
+    padding: 35px !important;
+    color: #94a3b8 !important;
+}
+
+/* ======================================================
+   FINANCIAL REPORT
+====================================================== */
+
+.or-financial-report-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.or-big-financial {
+    border-radius: 10px;
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+}
+
+.or-big-financial span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.or-big-financial strong {
+    display: block;
+    margin: 8px 0;
+    color: #0f172a;
+    font-size: 25px;
+}
+
+.or-big-financial small {
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.or-finance-type {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 15px;
+}
+
+.or-finance-type.revenue {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.or-finance-type.expense {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* ======================================================
+   LOADING
+====================================================== */
+
+.or-page-loading {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    color: #334155;
+}
+
+.or-page-loading h2 {
+    margin: 14px 0 5px;
+    font-size: 18px;
+}
+
+.or-page-loading p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.or-loading-icon {
+    animation: or-spin 1s linear infinite;
+}
+
+@keyframes or-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 1100px) {
+    .or-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .or-property-status-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .or-financial-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .or-financial-report-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .or-sidebar {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .or-main {
+        margin-left: 210px;
+    }
+
+    .or-header-right {
+        display: none;
+    }
+
+    .or-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .or-sidebar,
+    .or-header,
+    .or-print-btn,
+    .or-report-tabs {
+        display: none !important;
+    }
+
+    .or-main {
+        margin-left: 0;
+    }
+
+    .or-content {
+        padding: 20px;
+    }
+
+    .or-table-card {
+        border: 1px solid #ccc;
+    }
+}

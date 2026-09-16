@@ -1,0 +1,433 @@
+/* =====================================================
+   ACTIVITY LOGS PAGE
+===================================================== */
+
+.activity-logs-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f8fafc;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.activity-logs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.activity-logs-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+.activity-logs-header p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.activity-refresh-button {
+    border: 1px solid #dbe3ec;
+    background: #ffffff;
+    color: #334155;
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.activity-refresh-button:hover {
+    background: #f1f5f9;
+}
+
+.activity-refresh-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.activity-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 9px;
+    padding: 13px 16px;
+    margin-bottom: 20px;
+}
+
+.activity-error button {
+    border: none;
+    background: transparent;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.activity-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.activity-summary-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.activity-summary-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-summary-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.activity-summary-card strong {
+    display: block;
+    color: #0f172a;
+    font-size: 24px;
+}
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.activity-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.activity-search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    padding: 0 12px;
+    width: min(400px, 100%);
+}
+
+.activity-search svg {
+    color: #94a3b8;
+}
+
+.activity-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 11px 0;
+    font-size: 14px;
+    background: transparent;
+}
+
+.activity-filters select {
+    padding: 11px 13px;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    outline: none;
+    min-width: 145px;
+}
+
+.clear-filter-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 8px;
+    background: #f1f5f9;
+    color: #475569;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clear-filter-button:hover {
+    background: #e2e8f0;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.activity-logs-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.activity-card-header {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-card-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.activity-card-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.activity-card-header > svg {
+    color: #2563eb;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.activity-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1050px;
+}
+
+.activity-table th {
+    text-align: left;
+    padding: 13px 16px;
+    background: #f8fafc;
+    color: #475569;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #eef2f7;
+    color: #334155;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.activity-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =====================================================
+   USER
+===================================================== */
+
+.activity-user {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 180px;
+}
+
+.activity-user strong {
+    color: #0f172a;
+}
+
+.activity-user span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* =====================================================
+   ROLE
+===================================================== */
+
+.activity-role {
+    display: inline-flex;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   ACTIVITY
+===================================================== */
+
+.activity-action {
+    display: inline-flex;
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+/* =====================================================
+   MODULE
+===================================================== */
+
+.activity-module {
+    color: #475569;
+    font-weight: 600;
+}
+
+/* =====================================================
+   IP
+===================================================== */
+
+.activity-ip {
+    color: #64748b;
+    font-family: monospace;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.activity-date {
+    color: #64748b;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* =====================================================
+   LOADING / EMPTY
+===================================================== */
+
+.activity-loading,
+.activity-empty {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
+
+.activity-loading p,
+.activity-empty p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 8px 0 0;
+}
+
+.activity-empty h3 {
+    color: #334155;
+    margin: 15px 0 0;
+}
+
+/* =====================================================
+   SPINNER
+===================================================== */
+
+.activity-spin {
+    animation: activity-spin-animation 1s linear infinite;
+}
+
+@keyframes activity-spin-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .activity-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-logs-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .activity-refresh-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .activity-filters {
+        flex-wrap: wrap;
+    }
+
+    .activity-search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .activity-logs-page {
+        padding: 15px;
+    }
+
+    .activity-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .activity-filters select {
+        width: 100%;
+    }
+
+    .clear-filter-button {
+        justify-content: center;
+    }
+}

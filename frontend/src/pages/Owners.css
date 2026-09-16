@@ -1,0 +1,913 @@
+/* =====================================================
+   OWNERS PAGE
+===================================================== */
+
+.owners-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.owners-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.owners-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.owners-title-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.owners-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.owners-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   ALERT
+===================================================== */
+
+.owners-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.owners-alert span {
+    flex: 1;
+}
+
+.owners-alert button {
+    border: none;
+    background: transparent;
+    color: #b91c1c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.owners-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.owner-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.owner-stat-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.owner-stat-icon.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.owner-stat-icon.inactive {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.owner-stat-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.owner-stat-card strong {
+    font-size: 24px;
+    color: #0f172a;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.owners-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.owners-search {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 13px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    color: #64748b;
+}
+
+.owners-search:focus-within {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.owners-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #1e293b;
+    background: transparent;
+}
+
+.owners-search input::placeholder {
+    color: #94a3b8;
+}
+
+.owners-result-count {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   TABLE CARD
+===================================================== */
+
+.owners-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.owners-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.owners-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+.owners-table thead {
+    background: #f8fafc;
+}
+
+.owners-table th {
+    padding: 14px 16px;
+    text-align: left;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.owners-table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.owners-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.owners-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.owner-number {
+    color: #64748b;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   OWNER PERSON
+===================================================== */
+
+.owner-person {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.owner-avatar {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.owner-person strong {
+    display: block;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.owner-person small {
+    display: block;
+    margin-top: 3px;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.owner-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.owner-contact div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #475569;
+}
+
+.owner-contact svg {
+    color: #64748b;
+}
+
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.owner-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    max-width: 190px;
+    color: #475569;
+}
+
+.owner-address svg {
+    min-width: 16px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+
+/* =====================================================
+   ID
+===================================================== */
+
+.owner-id {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.owner-id strong {
+    color: #334155;
+    font-size: 13px;
+}
+
+.owner-id span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.owner-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.owner-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.owner-status.inactive {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.owner-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.owner-action-btn {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.owner-action-btn.view {
+    color: #2563eb;
+}
+
+.owner-action-btn.view:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.owner-action-btn.edit {
+    color: #7c3aed;
+}
+
+.owner-action-btn.edit:hover {
+    background: #f5f3ff;
+    border-color: #ddd6fe;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.owners-loading {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #64748b;
+}
+
+.owners-loading p {
+    margin: 0;
+}
+
+.owners-spinner {
+    animation: owners-spin 1s linear infinite;
+}
+
+@keyframes owners-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.owners-empty {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px;
+}
+
+.owners-empty h3 {
+    margin: 14px 0 5px;
+    color: #475569;
+}
+
+.owners-empty p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.owners-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.55);
+}
+
+.owners-modal {
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.25);
+}
+
+.owners-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 24px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.owners-modal-header h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 20px;
+}
+
+.owners-modal-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.owners-modal-close {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    background: #f1f5f9;
+    color: #475569;
+    cursor: pointer;
+}
+
+.owners-modal-close:hover {
+    background: #e2e8f0;
+}
+
+
+/* =====================================================
+   OWNER DETAILS
+===================================================== */
+
+.owner-details {
+    padding: 24px;
+}
+
+.owner-profile-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px;
+    margin-bottom: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.owner-large-avatar {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.owner-profile-box h3 {
+    margin: 0 0 4px;
+    color: #0f172a;
+}
+
+.owner-profile-box span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.owner-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.owner-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.owner-detail-item > svg {
+    color: #6366f1;
+    margin-top: 2px;
+}
+
+.owner-detail-item small {
+    display: block;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.owner-detail-item strong {
+    display: block;
+    color: #334155;
+    font-size: 13px;
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   OWNER PROPERTIES
+===================================================== */
+
+.owner-properties-section {
+    margin-top: 24px;
+}
+
+.owner-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.owner-section-title > svg {
+    color: #4338ca;
+}
+
+.owner-section-title h3 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 16px;
+}
+
+.owner-section-title span {
+    display: block;
+    margin-top: 3px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.owner-properties-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 100px;
+    color: #64748b;
+}
+
+.owner-no-properties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 9px;
+    color: #94a3b8;
+}
+
+.owner-no-properties p {
+    margin: 8px 0 0;
+    font-size: 13px;
+}
+
+.owner-property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.owner-property-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+.owner-property-item > div {
+    min-width: 0;
+}
+
+.owner-property-item strong {
+    display: block;
+    color: #0f172a;
+}
+
+.owner-property-item span:not(.property-status) {
+    display: block;
+    margin-top: 3px;
+    color: #6366f1;
+    font-size: 12px;
+}
+
+.owner-property-item small {
+    display: block;
+    margin-top: 3px;
+    color: #64748b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.property-status {
+    flex-shrink: 0;
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   EDIT FORM
+===================================================== */
+
+.owner-edit-form {
+    padding: 24px;
+}
+
+.owner-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.owner-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.owner-form-group.full {
+    grid-column: 1 / -1;
+}
+
+.owner-form-group label {
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.owner-form-group label span {
+    margin-left: 3px;
+    color: #dc2626;
+}
+
+.owner-form-group input,
+.owner-form-group select,
+.owner-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    color: #1e293b;
+    background: #ffffff;
+}
+
+.owner-form-group textarea {
+    resize: vertical;
+}
+
+.owner-form-group input:focus,
+.owner-form-group select:focus,
+.owner-form-group textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.owners-form-error {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 18px;
+    padding: 11px 13px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.owners-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 24px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.owners-secondary-btn,
+.owners-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 38px;
+    padding: 0 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.owners-secondary-btn {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+}
+
+.owners-secondary-btn:hover {
+    background: #f8fafc;
+}
+
+.owners-primary-btn {
+    border: 1px solid #4338ca;
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.owners-primary-btn:hover {
+    background: #4338ca;
+}
+
+.owners-primary-btn:disabled,
+.owners-secondary-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+    .owners-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .owners-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .owners-search {
+        width: auto;
+    }
+
+    .owner-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .owners-page {
+        padding: 15px;
+    }
+
+    .owners-header h1 {
+        font-size: 22px;
+    }
+
+    .owners-title-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .owner-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .owner-form-group.full {
+        grid-column: auto;
+    }
+
+    .owners-modal-overlay {
+        padding: 10px;
+    }
+
+    .owners-modal {
+        max-height: 95vh;
+    }
+
+    .owners-modal-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .owners-primary-btn,
+    .owners-secondary-btn {
+        width: 100%;
+    }
+}

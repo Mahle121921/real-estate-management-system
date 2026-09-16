@@ -1,0 +1,448 @@
+.customer-appointment-form-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+    color: #1e293b;
+}
+
+/* ================= HEADER ================= */
+
+.appointment-form-header {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.appointment-form-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+.appointment-form-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+}
+
+.appointment-back-button {
+    border: 1px solid #dbe3ef;
+    background: #ffffff;
+    color: #2563eb;
+    padding: 10px 15px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.appointment-back-button:hover {
+    background: #eff6ff;
+}
+
+/* ================= ALERTS ================= */
+
+.appointment-form-alert {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.error-alert {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.success-alert {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+}
+
+/* ================= LAYOUT ================= */
+
+.appointment-form-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 24px;
+}
+
+/* ================= PROPERTY CARD ================= */
+
+.appointment-property-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
+    height: fit-content;
+}
+
+.property-card-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.appointment-property-card h2 {
+    margin: 0;
+    font-size: 21px;
+    color: #0f172a;
+}
+
+.property-type {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.property-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 18px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.property-address svg {
+    color: #2563eb;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.property-status {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.available-status {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.sold-status {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.property-info-message,
+.sold-message {
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.property-info-message {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.sold-message {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+/* ================= FORM CARD ================= */
+
+.appointment-form-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.07);
+}
+
+.form-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.form-card-header > svg {
+    color: #2563eb;
+    margin-top: 2px;
+}
+
+.form-card-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.form-card-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group label svg {
+    color: #2563eb;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* ================= NOTICE ================= */
+
+.appointment-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    margin: 25px 0;
+}
+
+.appointment-notice > svg {
+    color: #2563eb;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.appointment-notice strong {
+    color: #334155;
+    font-size: 14px;
+}
+
+.appointment-notice p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ================= ACTIONS ================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+.cancel-appointment-button,
+.submit-appointment-button {
+    border-radius: 9px;
+    padding: 11px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-appointment-button {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+}
+
+.cancel-appointment-button:hover {
+    background: #f8fafc;
+}
+
+.submit-appointment-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+.submit-appointment-button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-appointment-button:disabled,
+.submit-appointment-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ================= DISABLED ================= */
+
+.form-disabled-message {
+    text-align: center;
+    padding: 40px 20px;
+    color: #64748b;
+}
+
+.form-disabled-message svg {
+    color: #dc2626;
+}
+
+.form-disabled-message p {
+    line-height: 1.5;
+}
+
+.form-disabled-message button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* ================= LOADING ================= */
+
+.appointment-form-loading {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+}
+
+.appointment-loading-spinner,
+.button-spinner {
+    animation: appointment-spin 1s linear infinite;
+}
+
+.appointment-loading-spinner {
+    color: #2563eb;
+}
+
+@keyframes appointment-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ================= ERROR PAGE ================= */
+
+.appointment-form-error-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.appointment-form-error-page > svg {
+    color: #dc2626;
+}
+
+.appointment-form-error-page h2 {
+    margin: 15px 0 5px;
+}
+
+.appointment-form-error-page p {
+    color: #64748b;
+}
+
+.appointment-form-error-page button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+    .appointment-form-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .customer-appointment-form-page {
+        padding: 18px;
+    }
+
+    .appointment-form-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .appointment-form-card,
+    .appointment-property-card {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-appointment-button,
+    .submit-appointment-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,293 @@
+.property-details-page {
+    padding: 25px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.back-properties {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.view-details-btn {
+    display: inline-block;
+    padding: 9px 16px;
+    background: #1e40af;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.view-details-btn:hover {
+    background: #1e3a8a;
+}
+.property-details-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+/* IMAGE */
+
+.main-property-image {
+    height: 430px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    background: #e2e8f0;
+}
+
+.main-property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-status {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: white;
+    font-weight: 700;
+}
+
+.detail-status.available {
+    color: #15803d;
+    background: #dcfce7;
+}
+
+.detail-status.reserved {
+    color: #c2410c;
+    background: #ffedd5;
+}
+
+.detail-status.sold {
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+.detail-status.rented {
+    color: #1d4ed8;
+    background: #dbeafe;
+}
+
+/* TITLE */
+
+.property-title-section {
+    padding: 22px 0;
+}
+
+.property-title-section h1 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: #0f172a;
+}
+
+.detail-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.detail-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+/* CARD */
+
+.details-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+.details-card h2 {
+    margin: 0 0 20px;
+    font-size: 19px;
+    color: #0f172a;
+}
+
+/* DETAILS */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-item svg {
+    width: 23px;
+    height: 23px;
+    color: #1d4ed8;
+}
+
+.detail-item span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.detail-item strong {
+    color: #0f172a;
+}
+
+/* DESCRIPTION */
+
+.property-description {
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* ACTIONS */
+
+.reserve-btn,
+.appointment-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.reserve-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.reserve-btn:hover {
+    background: #15803d;
+}
+
+.appointment-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #1e3a8a;
+    color: white;
+}
+
+.appointment-btn:hover {
+    background: #172554;
+}
+
+/* FEATURES */
+
+.features-list {
+    display: grid;
+    gap: 15px;
+}
+
+.features-list div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.features-list svg {
+    color: #16a34a;
+}
+
+/* MAP */
+
+.map-placeholder {
+    height: 230px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    color: #475569;
+}
+
+.map-placeholder svg {
+    color: #dc2626;
+}
+
+.map-placeholder strong {
+    color: #0f172a;
+}
+
+.map-placeholder span {
+    font-size: 12px;
+    max-width: 250px;
+}
+
+/* MESSAGE */
+
+.property-details-message {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #64748b;
+    font-size: 18px;
+}
+
+.property-details-message.error {
+    color: #dc2626;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .property-details-main {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .property-details-page {
+        padding: 16px;
+    }
+
+    .main-property-image {
+        height: 300px;
+    }
+
+    .property-title-section h1 {
+        font-size: 24px;
+    }
+
+    .detail-price {
+        font-size: 23px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

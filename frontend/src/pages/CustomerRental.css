@@ -1,0 +1,442 @@
+
+/* ============================================================
+   CUSTOMER RENTAL PAGE
+============================================================ */
+
+.customer-rental-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #1e293b;
+    padding: 0;
+}
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.customer-rental-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 28px 40px;
+}
+
+.customer-rental-header > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rental-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    transition: 0.2s ease;
+}
+
+.rental-back-link:hover {
+    color: #1d4ed8;
+    transform: translateX(-2px);
+}
+
+.customer-rental-header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.customer-rental-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* ============================================================
+   MAIN CONTENT
+============================================================ */
+
+.customer-rental-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 40px 50px;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+
+    align-items: start;
+}
+
+/* ============================================================
+   PROPERTY CARD
+============================================================ */
+
+.rental-property-card,
+.rental-form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+}
+
+/* ============================================================
+   PROPERTY CARD HEADER
+============================================================ */
+
+.rental-property-card {
+    padding: 26px;
+}
+
+.property-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.property-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.property-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.property-card-header h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ============================================================
+   PROPERTY STATUS
+============================================================ */
+
+.property-status-row {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #eef2f7;
+}
+
+.rental-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 6px 12px;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* Available */
+
+.rental-status.available {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* Rented */
+
+.rental-status.rented {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Reserved */
+
+.rental-status.reserved {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Sold */
+
+.rental-status.sold {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+/* ============================================================
+   PROPERTY INFORMATION
+============================================================ */
+
+.property-info-list {
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.property-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.property-info-item > svg {
+    color: #2563eb;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.property-info-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.property-info-item span {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.property-info-item strong {
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* ============================================================
+   MANUAL PAYMENT NOTICE
+============================================================ */
+
+.rental-notice {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 16px;
+
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+
+    color: #1e40af;
+}
+
+.rental-notice > svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.rental-notice strong {
+    display: block;
+    font-size: 14px;
+    color: #1e40af;
+    margin-bottom: 4px;
+}
+
+.rental-notice p {
+    margin: 0;
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* ============================================================
+   FORM CARD
+============================================================ */
+
+.rental-form-card {
+    padding: 28px;
+}
+
+/* ============================================================
+   FORM HEADING
+============================================================ */
+
+.rental-form-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.form-heading-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.rental-form-heading h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.rental-form-heading p {
+    margin: 5px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* ============================================================
+   ALERTS
+============================================================ */
+
+.rental-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: 22px;
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rental-alert svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.rental-alert.error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.rental-alert.success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+/* ============================================================
+   FORM
+============================================================ */
+
+.rental-form-card form {
+    margin-top: 24px;
+}
+
+.rental-field {
+    margin-bottom: 21px;
+}
+
+.rental-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon > svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #64748b;
+    pointer-events: none;
+}
+
+.input-with-icon input {
+    width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 14px 0 43px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #1e293b;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.input-with-icon input::placeholder {
+    color: #94a3b8;
+}
+
+.input-with-icon input:hover {
+    border-color: #94a3b8;
+}
+
+.input-with-icon input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+
+    background: #ffffff;
+}
+
+.input-with-icon input:disabled {
+    background: #f8fafc;
+    cursor: not-allowed;
+}
+
+/* ============================================================
+   DATE GRID
+============================================================ */
+
+.rental-date-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* ============================================================
+   FIELD HELP
+================================================

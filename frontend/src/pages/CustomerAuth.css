@@ -1,0 +1,225 @@
+
+/* ==========================================
+   CUSTOMER AUTH PAGE
+========================================== */
+
+.customer-auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f5f7fb;
+}
+
+/* ==========================================
+   AUTH CARD
+========================================== */
+
+.customer-auth-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.customer-auth-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.customer-auth-logo svg {
+    color: #2563eb;
+    flex-shrink: 0;
+}
+
+.customer-auth-logo h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.customer-auth-logo span {
+    display: block;
+    margin-top: 3px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #64748b;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.customer-auth-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.customer-auth-title svg {
+    margin-top: 3px;
+    color: #2563eb;
+}
+
+.customer-auth-title h2 {
+    margin: 0;
+    font-size: 23px;
+    color: #1e293b;
+}
+
+.customer-auth-title p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.customer-auth-error,
+.customer-auth-success {
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.customer-auth-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+.customer-auth-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+/* ==========================================
+   FORM
+========================================== */
+
+.customer-form-group {
+    margin-bottom: 17px;
+}
+
+.customer-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.customer-form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.customer-form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.customer-form-group input::placeholder {
+    color: #94a3b8;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.customer-auth-button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.customer-auth-button:hover {
+    background: #1d4ed8;
+}
+
+.customer-auth-button:active {
+    transform: translateY(1px);
+}
+
+.customer-auth-button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.customer-auth-footer {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.customer-auth-footer a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.customer-auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+    .customer-auth-page {
+        padding: 20px 15px;
+    }
+
+    .customer-auth-card {
+        padding: 25px 20px;
+    }
+
+    .customer-auth-title h2 {
+        font-size: 20px;
+    }
+}
+

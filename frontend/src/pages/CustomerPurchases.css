@@ -1,0 +1,320 @@
+/* =========================================================
+   CUSTOMER PURCHASES PAGE
+========================================================= */
+
+.customer-purchases-page {
+    min-height: 100vh;
+    padding: 32px;
+    background: #f5f7fb;
+    color: #1e293b;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.customer-purchases-header {
+    margin-bottom: 30px;
+}
+
+.customer-purchases-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.customer-purchases-title-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.customer-purchases-title h1 {
+    margin: 0 0 5px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.customer-purchases-title p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.customer-purchases-loading {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #64748b;
+}
+
+.customer-purchases-loading p {
+    margin: 0;
+}
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.spin {
+    animation: customerPurchaseSpin 1s linear infinite;
+}
+
+@keyframes customerPurchaseSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.customer-purchases-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.customer-purchases-alert.error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.customer-purchases-empty {
+    min-height: 350px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+}
+
+.customer-purchases-empty svg {
+    margin-bottom: 16px;
+}
+
+.customer-purchases-empty h2 {
+    margin: 0 0 8px;
+    color: #1e293b;
+    font-size: 22px;
+}
+
+.customer-purchases-empty p {
+    margin: 0;
+    max-width: 450px;
+    color: #64748b;
+}
+
+/* =========================================================
+   PURCHASE GRID
+========================================================= */
+
+.customer-purchases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* =========================================================
+   PURCHASE CARD
+========================================================= */
+
+.customer-purchase-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.customer-purchase-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.customer-purchase-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.customer-purchase-property-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.customer-purchase-card-header h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+    color: #0f172a;
+}
+
+.customer-purchase-card-header span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.customer-purchase-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 22px 0;
+}
+
+.customer-purchase-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.customer-purchase-detail svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #64748b;
+}
+
+.customer-purchase-detail span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.customer-purchase-detail strong {
+    display: block;
+    font-size: 15px;
+    color: #0f172a;
+}
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.customer-purchase-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.customer-purchase-card-footer > span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.purchase-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.purchase-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.purchase-status.paid {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.purchase-status.cancelled {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.purchase-status.sold {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+    .customer-purchases-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .customer-purchases-page {
+        padding: 20px;
+    }
+
+    .customer-purchases-title h1 {
+        font-size: 23px;
+    }
+
+    .customer-purchases-details {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-purchase-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
